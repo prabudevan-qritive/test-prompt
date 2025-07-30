@@ -5,8 +5,11 @@ Convert user instructions into structured JSON actions. Supported actions:
 1. Zoom:
 { "action": "zoom", "level": "fit" || "1" || "2.5" || "2" | "5" | "10" | "20" | "30" | "40" | "50"  || "80" }
 
-2. Screenshot:
-{ "action": "screenshot" }
+2. Take Screenshot:
+{ "action": "takescreenshot" }
+
+2. Process Screenshot:
+{ "action": "processscreenshot" }
 
 3. slide
 { "action": "zoom in" }
