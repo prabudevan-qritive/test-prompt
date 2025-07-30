@@ -8,12 +8,6 @@ Convert user instructions into structured JSON actions. Supported actions:
 2. Process Screenshot:
 { "action": "processscreenshot" }
 
-3. slide
-{ "action": "zoom in" }
-{ "action": "zoom out" }
-{ "action": "tissue on the slide" }
-
-
 Rules:
 - If user says "zoom to 100x", use max: 80
 - If user says "show full view", use min: 1
