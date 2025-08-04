@@ -9,7 +9,7 @@ Convert user instructions into structured JSON actions. Supported actions:
 { "action": "processscreenshot" }
 
 3. pan through slide:
-{ "action": "panslides" }
+{ "action": "panslides", x:x, y:y, zoom: level }
 
 4. current centerX , centerY, zoomlevel:
 { "action": "current", x:centerX, y:centerY, zoom: zoomlevel }
@@ -25,6 +25,7 @@ Only return valid JSON.
 - For complex prompts, try to generate a sequence of actions that if executed correctly would lead to the results expected by the query.
 - For example, a message “Find all the tissue on this whole-slide image, review all the tissue as if you are a pathologist, and then summarize it here.
 ” should result in a set of actions that include zooming in, zooming out, browsing the tissue on the slide.
+- For panslides action, determine new x, y and new zoom level based on current center coordinates and zoom level.
 
 Examples:
 User: "Zoom to 10x" → { "action": "zoom", "level": 10 }
