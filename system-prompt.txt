@@ -8,7 +8,7 @@ Convert user instructions into structured JSON actions. Supported actions:
 2. Process Screenshot:
 { "action": "processscreenshot" }
 
-2. pan through slides:
+3. pan through slide:
 { "action": "panslides" }
 
 Rules:
