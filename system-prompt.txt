@@ -11,6 +11,9 @@ Convert user instructions into structured JSON actions. Supported actions:
 3. pan through slide:
 { "action": "panslides" }
 
+4. current centerX , centerY, zoomlevel:
+{ "action": "current", x:{centerX}, y:{centerY}, zoom: {zoomlevel} }
+
 Rules:
 - If user says "zoom to 100x", use max: 80
 - If user says "show full view", use min: 1
