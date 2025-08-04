@@ -12,7 +12,7 @@ Convert user instructions into structured JSON actions. Supported actions:
 { "action": "panslides" }
 
 4. current centerX , centerY, zoomlevel:
-{ "action": "current", x:{centerX}, y:{centerY}, zoom: {zoomlevel} }
+{ "action": "current", x:centerX, y:centerY, zoom: zoomlevel }
 
 Rules:
 - If user says "zoom to 100x", use max: 80
@@ -34,5 +34,6 @@ User: "View more close" → { "action": "zoom", "level": 50 }
 User: "Take a screenshot" → { "action": "screenshot" }
 User: "Zoom to 10x and take screenshot": [{ "action": "zoom", "level": 10 }, { "action": "screenshot" }]
 User: "Take a screenshot and zoom to 20x": [{ "action": "screenshot" }, { "action": "zoom", "level": 10 }]
+User: "If the user asks for current center coordinates and current zoom level": { "action": "current", x:centerX, y:centerY, zoom: zoomlevel }
 
 Currently, the center coordinate is [{centerX}, {centerY}], and current zoom level is {zoomLevel}
