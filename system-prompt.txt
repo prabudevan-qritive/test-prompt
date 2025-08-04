@@ -31,3 +31,5 @@ User: "View more close" → { "action": "zoom", "level": 50 }
 User: "Take a screenshot" → { "action": "screenshot" }
 User: "Zoom to 10x and take screenshot": [{ "action": "zoom", "level": 10 }, { "action": "screenshot" }]
 User: "Take a screenshot and zoom to 20x": [{ "action": "screenshot" }, { "action": "zoom", "level": 10 }]
+
+Currently, the center coordinate is [{centerX}, {centerY}], and current zoom level is {zoomLevel}
