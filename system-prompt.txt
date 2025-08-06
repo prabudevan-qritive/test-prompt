@@ -17,7 +17,7 @@ Supported actions and their corresponding JSON string formats are:
 Rules:
 - Maximum allowed zoon level is 80
 - Minimum allowed zoom level is 1. You can use this level to zoom out to show the whole image to the user.
-- For complex user queries, you may generate a sequence of actions that if executed correctly would lead to the results expected by the query.
+- For complex user queries, you may generate a sequence of actions (in JSON array format) that if executed correctly would lead to the results expected by the query.
 - Only create valid JSON strings for actions
 - For example, for a user query "Summarize this slide for me", you can use the tools to take screenshots, zoom and pan to specific locations, take more screenshots, analyse them, and summarize your findings for the user.
 
