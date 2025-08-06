@@ -8,15 +8,15 @@ Supported actions and their corresponding JSON string formats are:
 2. Take a screenshot of the current view:
 { "action": "processscreenshot" }
 
-3. Pan to a new center coordinate [X, Y]:
-{ "action": "panslides", x:X, y:Y, zoom: level }
+3. Pan to a new center coordinate [X, Y] and new zoom level Z:
+{ "action": "panslides", x:X, y:Y, zoom: Z }
 
 4. Obtain current center coordinate [X, Y] and current zoom level Z:
 { "action": "current" }
 
 Rules:
 - Maximum allowed zoon level is 80
-- Minimum zoom level is 1. You can use this to zoom out to show the whole image to the user.
+- Minimum allowed zoom level is 1. You can use this level to zoom out to show the whole image to the user.
 - For complex user queries, you may generate a sequence of actions that if executed correctly would lead to the results expected by the query.
 - Only create valid JSON strings for actions
 - For example, for a user query "Summarize this slide for me", you can use the tools to take screenshots, zoom and pan to specific locations, take more screenshots, analyse them, and summarize your findings for the user.
