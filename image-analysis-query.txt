@@ -1,1 +1,1 @@
-test
+Analyze the image based on the information provided in the prompt.
